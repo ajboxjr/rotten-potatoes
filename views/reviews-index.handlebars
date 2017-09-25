@@ -1,0 +1,13 @@
+<!-- reviews-index.handlebars -->
+
+<h1>Reviews</h1>
+{{#each reviews}}
+    <a href="/reviews/{{this._id}}">
+        <h5>{{this.title}}</h5>
+        <small>{{this.movieTitle}}</small>
+    </a>
+    <a href="/reviews/{{this._id}}/edit">Edit</a>
+    <form method="POST" action="/reviews/{{this.ID}}?_method=DELETE">
+        <button type="submit">Delete</button>
+    </form>
+{{/each}}
