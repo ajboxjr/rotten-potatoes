@@ -17,7 +17,7 @@ var Reviews = mongoose.model('Review',{
     movieTitle: String
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('Portfolio App listening on port 3000!')
 })
 
