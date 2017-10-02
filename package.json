@@ -25,3 +25,6 @@
   "homepage": "https://github.com/ajboxjr/rotten-potatoes#readme",
   "description": ""
 }
+"scripts":{
+    "start": "node app.js"
+}
